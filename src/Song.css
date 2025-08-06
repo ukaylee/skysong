@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "RollingStone";
+    src: url("./assets/fonts/The_Rolling_Stone.ttf");
+}
+
+@font-face {
+    font-family: "Sunflower";
+    src: url("./assets/fonts/Sunflower.otf");
+}
+
+h2{
+    font-family: "Sunflower", sans-serif;
+    font-size: 70px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+p{
+    font-family: "Times New Roman", Times, serif;
+    font-size:20px;
+}
+
+.sbutton {
+    background-color: #a1ecd1;
+    font-size: 16px;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+    padding:5px;
+    font-family: "Verdana", Verdana, sans-serif;
+}
+
+.sbutton:hover {
+  background-color: yellowgreen; 
+  color: white;
+}
+
+.container{
+    display: flex;
+}
+
+.info{
+    padding:30px;
+}
+
+.image{
+
+    max-width: 100%; /* Scale to fit within the container */
+    max-height: 320px;
+    padding:30px;
+}
+
+.back_button{
+    background-color: #ffc7e2;
+    font-size: 16px;
+    border-radius: 12px;
+    font-family: "Verdana", Verdana, sans-serif;
+    max-height: 30px;
+    padding:30px;
+    text-align: center; /* Center the text horizontally */
+    line-height: 0; /* Align vertically */
+    margin: 30px;
+    margin-left: auto;
+}
