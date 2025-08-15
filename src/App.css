@@ -1,9 +1,12 @@
+/* Tailwind's component styles */
+@tailwind components;
 
-
+/* Tailwind's utility classes */
+@tailwind utilities;
 
 /* top header */
 
-/* Header styles */
+/* Header styles
 .header {
     display: flex;
     justify-content: space-between;
@@ -16,6 +19,7 @@
     color: white;
     font-size: 24px;
     font-weight: bold;
+    display: flex;
 }
 
 .right a {
@@ -26,4 +30,10 @@
 
 .right a:hover {
     text-decoration: underline;
-}
+} */
+
+/* .page-title {
+    line-height: 0;
+    font-family: "CloudySunday", sans-serif !important;
+    font-size: 200%;
+ } */

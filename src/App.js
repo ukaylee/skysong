@@ -1,50 +1,54 @@
 import React from "react";
-import '@clardiza/react-osmd-player/dist/index.css';          // this is required
-import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Directory from "./Directory.js";
-import Song from "./Song.js";
-import ErrorPage from "./ErrorPage.js";
-import { Resend } from 'resend';
+import "@clardiza/react-osmd-player/dist/index.css"; // this is required
+import { BrowserRouter as Router, Routes, Route, Form } from "react-router-dom";
+
+import Directory from "./Pages/Directory.js";
+import Song from "./Pages/Song.js";
+import ErrorPage from "./Pages/ErrorPage.js";
+import Todo from "./Pages/Todo.js";
+import Header from "./Components/Header.js";
+import Info from "./Pages/Info.js";
+import SongForm from "./Components/SongForm.js";
+import LogIn from "./Pages/LogIn.js";
+import ProtectedRoute from "./Components/ProtectedRoute.js";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Header2 from "./Components/Header2.js";
+import EditSong from "./Components/EditSong.js";
 
 function App() {
-
-// const handleClick = () => {
-
-//   // const resend = new Resend(RESEND_API_KEY);
-
-//   resend.emails.send({
-//     from: 'onboarding@resend.dev',
-//     to: 'kaylee.ulep@gmail.com',
-//     subject: 'Hello World Test',
-//     html: '<p>Congrats on sending your <strong>first email</strong>!</p>'
-//   });
-// }
-
   return (
-    <div style={{ padding: 40 }}>
+    <>
+      <main className="bg-sky-50 font-sans">
+        <div style={{ padding: 40 }}>
+          {/* <Header /> */}
+          <Header2 />
 
-
-      <div className="header">
-        <div className="left">
-          OSMD Player Demo - Kaylee
+          <Router>
+            <div>
+              <Routes>
+                <Route exact path="/" element={<Directory />} />
+                <Route path="/song/:id" element={<Song />} />
+                <Route exact path="/404" element={<ErrorPage />} />
+                <Route exact path="/todo" element={<Todo />} />
+                <Route exact path="/info" element={<Info />} />
+                <Route exact path="/edit" element={<EditSong songId="0" />} />
+                <Route
+                  path="/new"
+                  element={
+                    <ProtectedRoute>
+                      <SongForm />
+                    </ProtectedRoute>
+                  }
+                />
+                <Route exact path="/account" element={<LogIn />} />
+              </Routes>
+            </div>
+          </Router>
+          <ToastContainer position="top-center" autoClose={3000} />
         </div>
-        <div className="right">
-         <button onClick={() => window.location.replace('/')}>Home</button>
-         {/* <button onClick={handleClick}>Email Test</button> */}
-        </div>
-      </div>
-
-      <Router>
-        <div>
-          <Routes>
-            <Route exact path="/" element={<Directory />} />
-            <Route path="/song/:id" element={<Song />} />
-            <Route exact path="/404" element={<ErrorPage />} />
-          </Routes>
-        </div>
-      </Router>
-    </div>
+      </main>
+    </>
   );
 }
 

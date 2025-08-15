@@ -1,13 +1,50 @@
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
+/* 
+@layer base {
+  */
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 1rem;
+  /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+/* .title-font{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  } */
+/* 
+  p {
+    font-family: "Lora", sans-serif;
+  }
+
+  label {
+    font-family: "Lora", sans-serif;
+  } */
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family:
+    source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/*
+} */
+
+.header-button {
+  font-size: 20px;
+  font-weight: 250;
+  color: skyblue;
 }
