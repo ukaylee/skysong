@@ -4,9 +4,10 @@
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^3.24.2",
-    "@clardiza/react-osmd-player": "^1.0.12",
+    "@clardiza/react-osmd-player": "^1.0.6",
     "@emotion/react": "^11.14.0",
     "@supabase/supabase-js": "^2.53.0",
+    "@tailwindcss/cli": "^4.1.12",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.6.4",
     "@testing-library/react": "^16.3.0",
@@ -19,6 +20,7 @@
     "react-scripts": "5.0.1",
     "react-toastify": "^11.0.5",
     "resend": "^4.8.0",
+    "tailwindcss": "^4.1.12",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -29,7 +31,9 @@
     "prebuild": "npm-run-all prebuildVexflow prebuildSamplePlayer prebuildSoundfontPlayer",
     "prebuildVexflow": "ncp node_modules/@clardiza/react-osmd-player/src/osmd/VexFlowPatch/src/ node_modules/vexflow/src/",
     "prebuildSamplePlayer": "ncp node_modules/@clardiza/react-osmd-player/src/osmd/SamplePlayerPatch/lib/ node_modules/sample-player/lib/",
-    "prebuildSoundfontPlayer": "ncp node_modules/@clardiza/react-osmd-player/src/osmd/SoundfontPlayerPatch/lib/ node_modules/soundfont-player/lib/"
+    "prebuildSoundfontPlayer": "ncp node_modules/@clardiza/react-osmd-player/src/osmd/SoundfontPlayerPatch/lib/ node_modules/soundfont-player/lib/",
+    "tailwind:watch": "npx @tailwindcss/cli -i ./src/index.css -o ./src/skysong.css --watch",
+    "tailwind:build": "npx @tailwindcss/cli -i ./src/index.css -o ./src/skysong.css --minify"
   },
   "eslintConfig": {
     "extends": [
@@ -48,5 +52,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "daisyui": "^5.0.51"
   }
 }

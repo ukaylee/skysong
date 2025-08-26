@@ -1,6 +1,25 @@
-/* @tailwind base; */
 @tailwind components;
 @tailwind utilities;
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* Custom font utilities */
+@layer utilities {
+  .font-cloudy {
+    font-family: "CloudySunday", serif;
+  }
+  .font-sunflower {
+    font-family: "Sunflower", serif;
+  }
+  .font-lora {
+    font-family: "Lora", serif;
+  }
+}
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
 /* 
 @layer base {
   */
