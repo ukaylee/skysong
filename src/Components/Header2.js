@@ -2,24 +2,24 @@ import React from "react";
 
 function Header2() {
   return (
-    <div className="navbar bg-base-100 shadow-lg rounded-2xl h-[100px] px-6">
+    <div className="navbar bg-base-100 shadow-lg rounded-2xl flex items-center px-4 py-2 flex-wrap">
       {/* left */}
       <div
-        className="navbar-start cursor-pointer flex items-center gap-3 h-full"
+        className="navbar-start cursor-pointer flex items-center gap-3 flex-shrink-0"
         onClick={() => (window.location.href = "/")}
       >
         <img
           src="/assets/images/logo.png"
           alt="logo"
-          className="h-[80px] w-auto object-contain"
+          className="h-16 sm:h-20 md:h-24 w-auto object-contain"
         />
-        <span className="text-[60px] font-cloudy leading-none text-sky-400/60">
+        <span className="text-2xl sm:text-3xl md:text-5xl font-cloudy leading-none text-sky-400/60">
           SkySong
         </span>
       </div>
 
       {/* right */}
-      <div className="navbar-end flex items-center h-full gap-4">
+      <div className="navbar-end flex items-center gap-4 flex-wrap mt-2 md:mt-0">
         <button
           onClick={() => (window.location.href = "/")}
           className="text-white hover:underline header-button"
@@ -37,10 +37,11 @@ function Header2() {
         <button
           onClick={() => (window.location.href = "/account")}
           className="flex items-center"
+          aria-label="Account"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-7 w-7"
+            className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8"
             viewBox="0 0 16 16"
             fill="skyblue"
           >
