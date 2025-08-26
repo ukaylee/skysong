@@ -18,6 +18,7 @@ function Header() {
           SkySong
         </p>
       </div>
+
       <div className="flex gap-10">
         <button
           onClick={() => window.location.replace("/")}

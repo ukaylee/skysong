@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "@clardiza/react-osmd-player/dist/index.css"; // this is required
+// import "@clardiza/react-osmd-player/dist/index.css"; // this is required
 
 // import "../App.css";
 // import "../Directory.css";
@@ -41,7 +41,7 @@ function Directory() {
   return (
     <main className="min-h-[calc(100dvh-210px)] pt-6 mt-8 w-full">
       <div className="card w-full  mx-auto shadow-2xl bg-white rounded-2xl">
-        <h1 className="p-[20px] pb-0 text-5xl">Directory</h1>
+        <h1 className="p-[20px] pb-[15px] text-5xl">Directory</h1>
 
         <div className="p-[20px] pt-0 mr-[25px] font-sans">
           <SearchBar

@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# SkySong 🎶
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+_A web app for learning music._
 
-## Available Scripts
+<!-- Badges -->
 
-In the project directory, you can run:
+![React](https://img.shields.io/badge/React-19-blue?logo=react)
+[![Vercel](https://img.shields.io/badge/Vercel-Deployed-success?logo=vercel&logoColor=white)](https://skysong-nine.vercel.app/)
+![Supabase](https://img.shields.io/badge/Database-Supabase-3FCF8E?logo=supabase&logoColor=white)
 
-### `npm start`
+🔗 **Live Demo**:  https://skysong-nine.vercel.app/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Preview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- Replace with screenshots or a GIF demo -->
 
-### `npm test`
+![SkySong Demo](assets/demo.gif)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features:
 
-### `npm run build`
+| Feature                   | Description                                                  |
+| ------------------------- | ------------------------------------------------------------ |
+| Song Library              | Searchable by title, artist, arranger                        |
+| Built-in Music Player     | Mute parts, transpose, adjust tempo, zoom in/out, export PDF |
+| Admin Role                | Add songs (edit/delete coming soon)                          |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+> **Note:**  
+>
+> - The login feature currently exists for **admin users only**. Admin privileges are **manually assigned by the owner of this repository**. Creating a new login in the live demo will not grant admin access.  
+> - This login feature is intended for **future enhancements**, such as organization/group membership, when members will be required to log in.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Tech Stack:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Frontend:** React, TailwindCSS, DaisyUI  
+- **Database:** PostgreSQL / Supabase  
+- **Deployment:** Vercel  
+- **Music Rendering/Playback:** [OpenSheetMusicDisplay (OSMD)](https://opensheetmusicdisplay.org/) — includes a sponsor-only private package
 
-### `npm run eject`
+  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Local Installation (Personal Use)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Full local setup steps are documented in [INSTALLATION.md](INSTALLATION.md)
+. Access to private packages and credentials is needed for local setup, but **you do not need this** to view the live demo or GIF previews.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Why I Built This
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+I created **SkySong** with my _Filipino A Capella group_ in mind. The goal was to make it easier for members to:
 
-## Learn More
+- Follow along visually with the score as the music plays
+- Isolate or mute parts to practice their own voice part
+- Upload arrangements directly (via admin access)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This project allowed me to combine my passion for music and technology, while building something useful for real collaborators.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Future Improvements
 
-### Code Splitting
+- [ ] Support multiple organizations, so admins can share music with specific groups only
+- [ ] Song categories for improved searching/filtering
+- [ ] Edit and delete features for song entries
+- [ ] Fully responsive mobile UI
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## About Me
 
-### Analyzing the Bundle Size
+Kaylee Ulep
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- LinkedIn: https://www.linkedin.com/in/kaylee-ulep/
+- Email: kaylee.ulep@gmail.com

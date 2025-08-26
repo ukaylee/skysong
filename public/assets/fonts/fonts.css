@@ -1,21 +1,21 @@
 @font-face {
   font-family: "CloudySunday";
-  src: url("CloudySunday.ttf") format("truetype");
+  src: url("./CloudySunday.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-    font-family: "RollingStone";
-    src: url("The_Rolling_Stone.ttf") format("truetype");
+  font-family: "RollingStone";
+  src: url("The_Rolling_Stone.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Sunflower";
-    src: url("Sunflower.otf") format("opentype");
+  font-family: "Sunflower";
+  src: url("Sunflower.otf") format("opentype");
 }
 
 @font-face {
-    font-family: "Lora";
-    src: url("Lora.ttf") format("truetype");
+  font-family: "Lora";
+  src: url("Lora.ttf") format("truetype");
 }

@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 // import '../Song.css'
 import { useParams } from "react-router-dom";
 import { supabase } from "../supabaseClient";
+import "@clardiza/react-osmd-player/dist/osmd-player.css";
 
 function Song() {
   const { id } = useParams();
@@ -64,9 +65,9 @@ function Song() {
               <p>Arranged by {arranger}</p>
               <p>Released: {year}</p>
               <p>Album: {album}</p>
-              <button className="btn btn-success" onClick={handleClick}>
+              {/* <button className="btn btn-success" onClick={handleClick}>
                 Listen on Spotify
-              </button>
+              </button> */}
             </div>
             <button
               onClick={handleBackClick}
@@ -79,7 +80,11 @@ function Song() {
 
           <div className="p-[30px]">
             {/* <OsmdPlayer filename={`/assets/songs/${file}`} height="600px"/> */}
-            <OsmdPlayer filename={file} height="600px" />
+            <OsmdPlayer
+              filename={file}
+              height="600px"
+              inheritHostTheme={true}
+            />
           </div>
         </div>
       </main>

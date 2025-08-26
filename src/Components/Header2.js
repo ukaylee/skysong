@@ -22,7 +22,7 @@ function Header2() {
 
       {/* right */}
       <div className="navbar-end">
-        <ul className="menu menu-horizontal px-1 h-[100px] items-center gap-4">
+        <ul className="px-1 h-[100px] flex items-center gap-4">
           <li>
             <button
               onClick={() => (window.location.href = "/")}

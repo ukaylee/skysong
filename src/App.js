@@ -1,5 +1,6 @@
 import React from "react";
-import "@clardiza/react-osmd-player/dist/index.css"; // this is required
+// import "@clardiza/react-osmd-player/dist/index.css"; // this is required
+// import "@clardiza/react-osmd-player/dist/osmd-player.css";
 import { BrowserRouter as Router, Routes, Route, Form } from "react-router-dom";
 
 import Directory from "./Pages/Directory.js";
