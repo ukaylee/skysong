@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { supabase } from "../supabaseClient";
 import FileUpload from "./FileUpload";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useAuth } from "../AuthContext.js";
 
 function SongForm() {
   const [formValues, setFormValues] = useState({
@@ -19,7 +20,25 @@ function SongForm() {
   const [imgUrl, setImgUrl] = useState("");
   const [xmlUrl, setXmlUrl] = useState("");
 
-  // const { session } = useAuth();
+  const { session } = useAuth();
+
+  if (session === undefined) {
+    // still loading session
+    return <p>Loading...</p>;
+  }
+
+  if (session === null) {
+    // not logged in
+    return <p>You must be logged in.</p>;
+  }
+
+  // session is an object here
+  const user = session.user;
+
+  // check for the correct user
+  if (user.is_admin === false) {
+    return <p>Access denied: Not an Admin</p>;
+  }
 
   // Update formValues on every input change
   const handleChange = (e) => {

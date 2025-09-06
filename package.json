@@ -32,8 +32,8 @@
     "prebuildVexflow": "ncp node_modules/@clardiza/react-osmd-player/src/osmd/VexFlowPatch/src/ node_modules/vexflow/src/",
     "prebuildSamplePlayer": "ncp node_modules/@clardiza/react-osmd-player/src/osmd/SamplePlayerPatch/lib/ node_modules/sample-player/lib/",
     "prebuildSoundfontPlayer": "ncp node_modules/@clardiza/react-osmd-player/src/osmd/SoundfontPlayerPatch/lib/ node_modules/soundfont-player/lib/",
-    "tailwind:watch": "npx @tailwindcss/cli -i ./src/index.css -o ./src/skysong.css --watch",
-    "tailwind:build": "npx @tailwindcss/cli -i ./src/index.css -o ./src/skysong.css --minify"
+    "tailwind:watch": "npx @tailwindcss/cli -i ./src/index.css -o ./public/skysong.css --watch",
+    "tailwind:build": "npx @tailwindcss/cli -i ./src/index.css -o ./public/skysong.css --minify"
   },
   "eslintConfig": {
     "extends": [

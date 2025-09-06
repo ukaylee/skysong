@@ -19,17 +19,17 @@ function Header2() {
       </div>
 
       {/* right */}
-      <div className="navbar-end flex items-center gap-4 flex-wrap mt-2 md:mt-0">
+      <div className="ml-auto navbar-end flex items-center gap-3 flex-wrap">
         <button
           onClick={() => (window.location.href = "/")}
-          className="text-white hover:underline header-button"
+          className="text-white hover:underline header-button text-sm sm:text-base md:text-lg"
         >
           Home
         </button>
 
         <button
           onClick={() => (window.location.href = "/new")}
-          className="text-white hover:underline header-button"
+          className="text-white hover:underline header-button text-sm sm:text-base md:text-lg"
         >
           Add Song
         </button>

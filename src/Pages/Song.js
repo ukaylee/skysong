@@ -50,31 +50,48 @@ function Song() {
   };
   return (
     <>
-      <main className="min-h-[calc(100dvh-210px)] pt-6 mt-8 w-full">
+      <main className="min-h-[calc(100dvh-210px)] pt-6 mt-4 w-full">
         <div className="card w-full  mx-auto shadow-2xl bg-white rounded-2xl">
-          <div className="relative flex">
-            {/* <img src={`/assets/images/${img}`} className='max-w-[300px] aspect-square p-[30px]'></img> */}
-            <img
-              src={img}
-              className="max-w-[300px] aspect-square p-[30px]"
-            ></img>
+          <div className="relative flex p-[30px] gap-4">
+            {/* Important to use ! when it starts with hidden. */}
+            <div className="hidden sm:!block sm:min-w-40 sm:max-w-40 md:min-w-60 md:max-w-60 ">
+              <img src={img} className="w-full aspect-square"></img>
+            </div>
+            <div className="w-full">
+              <p className="font-sunflower text-xl sm:!text-2xl md:!text-4xl font-bold mt-0 mb-0">
+                {title}
+              </p>
+              {/* Bug in tailwind responsive behavior when starting the size with text-xs. 
+                  Using text-[12px] as a workaround 
+                  <p className="text-[12px] sm:text-sm md:text-base"><span className="font-semibold">By:</span> {artist}</p>
+                  FIX: Use ! to override 
+                  <p className="text-xs sm:!text-sm md:!text-base"><span className="font-semibold">By:</span> {artist}</p>
+              */}
+              <p className="text-xs sm:!text-sm md:!text-base">
+                <span className="font-semibold">By:</span> {artist}
+              </p>
+              <p className="text-xs sm:!text-sm md:!text-base">
+                <span className="font-semibold">Arranged by:</span> {arranger}
+              </p>
+              <p className="text-xs sm:!text-sm md:!text-base">
+                <span className="font-semibold">Released:</span> {year}
+              </p>
+              <p className="text-xs sm:!text-sm md:!text-base">
+                <span className="font-semibold">Album:</span> {album}
+              </p>
 
-            <div className="p-[30px]">
-              <h2 className="font-sunflower text-[70px] mt-0 mb-0">{title}</h2>
-              <p>By {artist}</p>
-              <p>Arranged by {arranger}</p>
-              <p>Released: {year}</p>
-              <p>Album: {album}</p>
               {/* <button className="btn btn-success" onClick={handleClick}>
                 Listen on Spotify
               </button> */}
             </div>
-            <button
-              onClick={handleBackClick}
-              className="p-[30px] m-[30px] btn btn-dark absolute top-0 right-0 text-center text-[16px] leading-[0] ml-auto"
-            >
-              Back
-            </button>
+            <div>
+              <button
+                onClick={handleBackClick}
+                className="btn btn-sm md:!btn-md"
+              >
+                Back
+              </button>
+            </div>
           </div>
           <p></p>
 

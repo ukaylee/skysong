@@ -39,11 +39,13 @@ function Directory() {
   }
 
   return (
-    <main className="min-h-[calc(100dvh-210px)] pt-6 mt-8 w-full">
+    <main className="min-h-[calc(100dvh-210px)] pt-6 mt-4 w-full">
       <div className="card w-full  mx-auto shadow-2xl bg-white rounded-2xl">
-        <h1 className="p-[20px] pb-[15px] text-5xl">Directory</h1>
+        <h1 className="p-[20px] pb-[15px] text-2xl sm:text-3xl md:text-4xl font-bold">
+          Directory
+        </h1>
 
-        <div className="p-[20px] pt-0 mr-[25px] font-sans">
+        <div className="p-[20px] pt-0 font-sans">
           <SearchBar
             // value={searchTerm}
             // onChange={(e) => {setSearchTerm(e.target.value)}}

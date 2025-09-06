@@ -21,7 +21,7 @@ function App() {
   return (
     <>
       <main className="bg-sky-50 font-sans">
-        <div style={{ padding: 40 }}>
+        <div className="p-5 sm:p-8">
           {/* <Header /> */}
           <Header2 />
 
