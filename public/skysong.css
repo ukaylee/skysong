@@ -703,8 +703,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 .header-button {
-  font-size: 20px;
-  font-weight: 250;
   color: skyblue;
 }
 @layer base {
