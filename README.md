@@ -14,7 +14,14 @@ _A web app for learning music._
 
 <!-- Replace with screenshots or a GIF demo -->
 
-![SkySong Demo](assets/demo.gif)
+![SkySong Demo](assets/demo_v3.gif)
+
+## 📱 Mockups
+
+<div>
+  <img src="./assets/iPhone-portrait.png" width="150"/>
+  <img src="./assets/Macbook.png" width="500"/>
+</div>
 
 ## Features:
 
