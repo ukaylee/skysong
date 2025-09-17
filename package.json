@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^3.24.2",
-    "@clardiza/react-osmd-player": "^1.0.6",
+    "@clardiza/react-osmd-player": "^2.0.1",
     "@emotion/react": "^11.14.0",
     "@supabase/supabase-js": "^2.53.0",
     "@tailwindcss/cli": "^4.1.12",
